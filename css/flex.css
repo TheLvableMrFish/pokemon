@@ -1,0 +1,496 @@
+:root{
+    --prim: skyblue;
+    --sec: rgb(41, 166, 216);
+    --page1: 5;
+    --page2: 1;
+}
+
+*{box-sizing: border-box;}
+
+/* Generic star */
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #f4f4f6;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+h2{
+    font-size: 38px;
+}
+
+/* Generic end */
+
+/* header start */
+
+header{
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+}
+
+header li{
+    display: inline;
+    margin-left: 1%;
+    padding-right: 1%;
+    border-right: 1px solid white;
+}
+
+header li:last-child{
+    border: 1px #000;
+}
+
+.wallet{
+    display: flex;
+    font-size: 23px;
+    margin-top: 15px;
+    margin-left: 20%;
+    margin-right: 15%;
+}
+
+.logo{
+    font-size: 52px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15%;
+    margin-right: 10%;
+    width: 20%;
+    color: rgb(41, 166, 216);
+}
+
+#search-bar{
+    margin-top: 15px;
+    font-size: 18px;
+    width: 100%;
+    height: 30px;
+}
+
+.search{
+    width: 40%;
+}
+
+.section1-header{
+    display: flex;
+}
+
+.section2-header{
+    text-align: center;
+    background-color: var(--prim);
+    font-weight: 700;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+header a{
+    color: white;
+}
+
+header a:hover{
+    color: yellow;
+}
+/* header end */
+
+/* main start */
+
+.padding{
+    height: 110px;
+}
+
+.section1{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.section1{
+    background-color: var(--sec);
+}
+
+.section{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.section1 h2{
+    margin-bottom: 0;
+}
+
+.section1-text{
+    margin-left: 10%;
+    width: 30%;
+}
+
+.img-section1{
+    margin-left: 15%;
+}
+
+.section1-button{
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    font-weight: 600;
+    margin-top: 10px;
+    padding-top: 2px;
+    padding-left: 12px;
+    padding-right: px;
+    padding-bottom: 2px;
+    background-color: var(--sec);
+    margin-bottom: 10px;
+}
+
+.section1-button:hover{
+    background-color: var(--prim);
+}
+
+.section1-list{
+    display: flex;
+    width: 30%;
+    padding-left: 0;
+}
+.section1-item{
+    margin-left: 10px;
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.section2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section2-wrap{ 
+    display: flex;   
+    width: calc(100%/3.2);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 1%;
+    margin-right: 1%;  
+}
+
+.section2-main-text{
+    color: var(--sec);
+    margin-top: 15px;
+    margin-left: 15%;
+    margin-bottom: 15px;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.section2-button{
+    font-size: 18px;
+    border-radius: 2px;
+    font-weight: 600;
+    color: white;
+    background-color: orange;
+    margin-left: 15%;
+}
+
+.section3{
+    background-color: var(--sec);
+}
+
+.section3-main-text{
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    font-size: 34px;
+    color: white;
+}
+
+.section4{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.inner-section4{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section4-img{
+    text-align: center;
+    width: calc(100%/3.6);
+    margin-top: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 10px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 15px;
+    border: 1px solid gray;
+    border-bottom: 3px solid orange;
+    border-radius: 3px;
+}
+
+.section4-button{
+    font-size: 18px;
+    border-radius: 2px;
+    font-weight: 600;
+    color: white;
+    background-color: orange;
+}
+
+.section4-text{
+    margin-top: 0;
+}
+
+.section4 p{
+    font-size: 25px;
+}
+
+.section5-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section5-item{
+    width: calc(100%/4);
+}
+
+.section5-list-name{
+    margin-top: 40px;
+    margin-left: 35px;
+}
+
+.section5 li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.section5{
+    background-color: var(--sec);
+    color: white;
+}
+
+/* section 6 */
+
+.section6{
+    position: relative;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 600px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: black;
+}
+
+.inner-section6{
+    z-index: var(--page2);
+    position: absolute;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: -1px;
+    height: 600px;
+    width: 60%;
+    border: 1px solid #000;
+    background: #000;
+    background-color: #fff;
+    font-size: 24px;
+}
+
+.top-box{
+    
+    position: relative;
+    height: 200px;
+    width: 100%;
+    /* border: 1px solid #000; */
+}
+
+.enemy-stats{
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+.enemy-img{
+    position: absolute;
+    right: 5%;
+    top: 0;
+} 
+
+.middle-box{
+    
+    position: relative;
+    height: 200px;
+    width: 100%;
+    /* border: 1px solid #000; */
+}
+
+.your-poke-img{
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+}
+
+.your-poke-stats{
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+.bottom-box{
+    position: relative;
+    height: 200px;
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.empty-box{
+    position: absolute;
+    width: 40%;
+    margin-top: -1px;
+    /* border: 1px solid #000; */
+    height: 200px;
+}
+
+.choices{
+    position: absolute;
+    width: 60%;
+    right: 0;
+}
+
+.inner-choices{
+    width: 100%;
+    margin-top: -1px;
+    height: 200px;
+    position: relative;
+    /* border: 1px solid #000; */
+}
+
+.fight{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+.PKMN{
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+
+.pokemon-item{
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+}
+
+.run{
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
+
+#fight, #PKMN, #pokemon_item, #run{
+    font-size: 42px;
+    width: 150px;
+}
+
+/* section 6 */
+
+/* section 6 pt2 start*/
+
+.section6-pt2{
+    position: absolute;
+    z-index: var(--page1);
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: -1px;
+    height: 600px;
+    width: 60%;
+    border: 1px solid #000;
+    background: #000;
+    background-color: #fff;
+    font-size: 24px;
+}
+
+.inner-section6-pt2{
+    position: relative;
+}
+
+.pokemon-theme-img{
+    position: absolute;
+    right: 240px;
+    top: 50px;
+
+}
+
+.section6-pt2-poke-ball{
+    position: absolute;
+    top: 200px;
+    right: 260px;
+}
+
+.poke-game-start-button{
+    position: absolute;
+    top: 450px;
+    right: 300px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #FFDE00;
+    background-color: #3B4CCA;
+    width: 120px;
+    height: 50px;
+}
+
+/* section 6 pt2 end */
+
+/* main end */
+
+/* footer start */
+
+
+
+.footer{
+    font-weight: 700;
+    color: white;
+    background-color: var(--prim);
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.colophon-text{
+    text-align: center;
+}
+
+/* footer end */
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+  
+  /* ==========================================
+  Single-colored icons can be modified like so:
+  .icon-name {
+    font-size: 32px;
+    color: red;
+  }
+  ========================================== */
+  
+  .icon-price-tags {
+    width: 1.25em;
+  }
+  
