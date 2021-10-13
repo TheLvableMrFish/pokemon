@@ -4,184 +4,190 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/flex.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>Pokemon</title>
-
-    
 </head>
 <body>
-    
-    <header class="header" id="header">
-        <div class="inner inner-head" id="innder-head">
 
-            <section class="section1-header">
-                <h1 class="logo" id="logo">Pokemon</h1>
-            <div class="search" id="search">
-                <form action="#" class="search-bar">
-                    <input id="search-bar" type="text" placeholder="Search">
-                </form>
-            </div>
-            <div class="wallet" id="wallet">
-                <svg class="icon icon-price-tags"><use xlink:href="#icon-price-tags"></use></svg>
-                <div class="money">$<span id="amount_in_wallet"></span></div>
-            </div>
-            </section>
-            
-            <section class="section2-header">
-                <nav class="top-nav" id="top-nav">
-                    <ul class="top-nav-list">
-                        <li class="top-nav-item"><a href="#" class="top-nav-link">Home</a></li>
-                        <li class="top-nav-item"><a href="#Starter" class="top-nav-link">Starters</a></li>
-                        <li class="top-nav-item"><a href="#Featured_Sale" class="top-nav-link">Featured Sale</a></li>
-                        <li class="top-nav-item"><a href="#Backpacks" class="top-nav-link">Backpacks</a></li>
-                        <li class="top-nav-item"><a href="#Accessories" class="top-nav-link">Accessories</a></li>
-                        <li class="top-nav-item"><a href="#Sale" class="top-nav-link">Sale</a></li>
-                        <li class="top-nav-item"><a href="#Poke_Ball" class="top-nav-link">Poke-Ball</a></li>
-                        <li class="top-nav-item"><a href="#Rare_Candy" class="top-nav-link">Rare Candy</a></li>
-                        <li class="top-nav-item"><a href="#Pokemon" class="top-nav-link">Pokemon</a></li>
-                        <li class="top-nav-item"><a href="#Quick_Links" class="top-nav-link">Quick Links</a></li>
-                    </ul>
-                </nav>
-            </section>
-        </div>
-    </header>
-
-    <main class="main" id="main">
-        <div class="padding"></div>
-        <div class="inner">
-            <div class="outerSection1">
-            <section class="section section1">
-
-                <img src="media/pikachu.png" alt="img" width="300px" class="img-section1" id="img-section1">
-                <div class="section1-text" >
-                    <h2 class="main-text" id="section1-main-text">Pokemon Shop</h2>
-                    <p class="sub-text" id="section2-sub-text" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur commodi reiciendis ab natus fuga! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, cum. Explicabo, voluptatem! sit amet consectetur adipisicing elit. Voluptate, quaerat? Eaque et voluptates dolores eum eius enim at suscipit sit?</p>
-                    <div class="starter-link"id="Starter"></div>
-                    <input type="submit" value="Shop Now" id="clickme" onclick="changeImage()"; class="section1-button">
+    <!-- header start -->
+    <nav class="nav-border-img navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand"></a>
+                <img src="media/logo.png" alt="logo" class="img-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Starters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <form class="form-inline">
+                            <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                          </form>
+                    </li>
+                    <li class="nav-item">
+                    <div class="money"><a href="#" class="nav-link">Wallet: $<span id="amount_in_wallet"></a></span></div>
+                    </li>
                     
-                    <ul class="section1-list" >
-                        <li class="section1-item"><a href="#"></a></li>
-                        <li class="section1-item"><a href="#"></a></li>
-                        <li class="section1-item"><a href="#"></a></li>
-                        <li class="section1-item"><a href="#"></a></li>
-                        <li class="section1-item" ><a href="#"></a></li>
-                    </ul>
-                </div>
-            </section>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-            <section class="section section2" >
+<main>
 
-                <div class="section2-wrap">
-                <div class="section2-img" id="section2-img-1">
-                    <img src="media/poke-ball-img.png" alt="placeholder img" class="img-fluid" id="img-grass" width="150"/>
-                </div>
+    <div class="container-fluild padding">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1 section1"></div>
+            <div class="col-sm-12 col-md-4 section1">
+                <img src="media/pikachu.png" alt="img" width="300px" class="img-section1" id="img-section1">
+            </div>
+            <div class="col-sm-12 col-md-4 section1">
+                <h2 class="main-text" id="section1-main-text">Pokemon Shop</h2>
+                <p class="sub-text" id="section2-sub-text" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur commodi reiciendis ab natus fuga! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, cum. Explicabo, voluptatem! sit amet consectetur adipisicing elit. Voluptate, quaerat? Eaque et voluptates dolores eum eius enim at suscipit sit?</p>
+                <div class="starter-link"id="Starter"></div>
+                <input type="submit" value="Shop Now" id="clickme" onclick="changeImage()"; class="section1-button">
+            </div>
+            <div class="col-md-1 section1"></div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center">
+        <h1>Chose a Starter Pokemon</h1>
+        <div class="row">
+            <div class="col-md-3"></div>
+        <div class="col-md-2 section3-img" id="section2-img-1">
+                <img src="media/poke-ball-img.png" alt="placeholder img" class="img-fluid" id="img-grass" width="250"/>
                 <div class="section2-text">
-                    <p class=section2-main-text>Starter Bulbasaur</p>
+                    <!-- <p class=section2-main-text>Starter</p> -->
+                    <p class=section2-main-text>Bulbasaur</p>
                 <input type="submit" value="Chose" id="starter_grass" class="section2-button" onclick="changeImage1()";>
-                </div>
-                </div>
-                
-                <div class="section2-wrap">
-                    <div class="section2-img" id="section2-img-2">
-                        <img src="media/poke-ball-img.png" alt="placeholder img" class="img-fluid" id="img-fire" width="150"/>
-                    </div>
-                    <div class="section2-text">
-                        <p class=section2-main-text>Starter Charmander</p>
-                    <input type="submit" value="Chose" id="starter_fire" class="section2-button" onclick="changeImage2()";>
-                    </div>
-                    </div>
-
-                <div class="section2-wrap">
-                <div class="section2-img" id="section2-img-3">
-                    <img src="media/poke-ball-img.png" alt="placeholder img" class="img-fluid" id="img-water" width="150"/>
-                </div>
-                <div class="section2-text">
-                    <p class=section2-main-text>Starter Squirtle</p>  
-                <input type="submit" value="Chose" id="starter_water" class="section2-button" onclick="changeImage3()";>
-                </div>
-                <div class="featured-sales-link" id="Featured_Sale"></div>
-                </div>
-            </section>
-            
-            <div class="outerSection3">
-            <section class="section section3">
-                <h2 class="section3-main-text" id="section3-main-text">Featured Pokemon</h2>
-            </section>
             </div>
-            
-            <section class="section section4">
-                <div class="inner-section4">
-                <div class="section4-img" >
-                    <img src="media/poke-ball-img.png" alt="placeholder img" class="img-fluid" width="150" id="section4-img-1">
-                    <p class="section4-text">Lorem, ipsum.</p>
-                    <p class="text-price">$300</span> <input type="submit" value="Buy Now" class="section4-button" id="sale_poke1" onclick="changeImage4()"></p>
-                </div>
-
-                <div class="section4-img" >
-                    <img src="media/poke-ball-img.png" alt="placeholder img" class="img-fluid" width="150" id="section4-img-2">
-                    <p class="section4-text">Lorem, ipsum.</p>
-                    <p class="text-price">$300 <input type="submit" value="Buy Now" class="section4-button" id="sale_poke2" onclick="changeImage5()"></p>
-                </div>
-
-                <div class="section4-img" >
-                    <img src="media/poke-ball-img.png" alt="placeholder img" class="img-fluid" width="150" id="section4-img-3"/>
-                    <p class="section4-text">Lorem, ipsum.</p>
-                    <p class="text-price">$300 <input type="submit" value="Buy Now" class="section4-button" id="sale_poke3" onclick="changeImage6()"></p>
-                </div>
-
-                <div class="section4-img" >
-                    <img src="media/poke-ball-img.png" alt="placeholder img" class="img-fluid" width="150" id="section4-img-4"/>
-                    <p class="section4-text">Lorem, ipsum.</p>
-                    <p class="text-price">$999 <input type="submit" value="Buy Now" class="section4-button" id="sale_poke4" onclick="changeImage7()"></p>
-                </div>
-
-                <div class="section4-img" >
-                    <img src="media/poke-ball-img.png" alt="placeholder img" class="img-fluid" width="150" id="section4-img-5"/>
-                    <p class="section4-text">Lorem, ipsum.</p>
-                    <p class="text-price">$999 <input type="submit" value="Buy Now" class="section4-button" id="sale_poke5" onclick="changeImage8()"></p>
-                </div>
-
-                <div class="section4-img" >
-                    <img src="media/poke-ball-img.png" alt="placeholder img" class="img-fluid" width="150" id="section4-img-6"/>
-                    <p class="section4-text">Lorem, ipsum.</p>
-                    <p class="text-price">$999 <input type="submit" value="Buy Now" class="section4-button" id="sale_poke6" onclick="changeImage9()"></p>
-                </div>
-
+        </div>
+        <div class="col-md-2 section2-img" id="section2-img-2">
+            <img src="media/poke-ball-img.png" alt="placeholder img" class="img-fluid" id="img-fire" width="250"/>
+            <div class="section2-text">
+                <!-- <p class=section2-main-text>Starter</p> -->
+                <p class=section2-main-text>Charmander</p>
+            <input type="submit" value="Chose" id="starter_fire" class="section2-button" onclick="changeImage2()";>
             </div>
-            </section>
-                
-            <div class="outerSection5">
-            <section class="section section5">
-                <div class="section5-wrap">
-                <div class="Featured section5-item part-section5">
-                    <h3 class="featured-sale section5-list-name" id="featured-sale">Featured Sale</h3>
-                    <ul class="featured-list">
-                        <li class="featured-item">Lorem.</li>
-                        <li class="featured-item">Dolore?</li>
-                        <li class="featured-item">Impedit.</li>
-                        <li class="featured-item">Officiis!</li>
-                        <li class="featured-item">Beatae.</li>
-                        <li class="featured-item">Iure!</li>
-                        <li class="featured-item">Reprehenderit!</li>
-                        <li class="featured-item">Ipsa?</li>
-                    </ul>
-                </div>
-                <div class="poke-ball section5-item part-section5">
-                    <h3 class="poke-ball-store section5-list-name" id="poke-ball-store">Poke-Ball</h3>
-                    <ul class="poke-ball-list">
-                        <li class="poke-ball-item">Lorem.</li>
-                        <li class="poke-ball-item">Inventore.</li>
-                        <li class="poke-ball-item">Laboriosam!</li>
-                        <li class="poke-ball-item">Perferendis.</li>
-                        <li class="poke-ball-item">Ullam!</li>
-                        <li class="poke-ball-item">Accusamus.</li>
-                        <li class="poke-ball-item">Illum?</li>
-                        <li class="poke-ball-item">Nobis!</li>
-                    </ul>
-                </div>
-                <div class="rare-candy section5-item part-section5">
-                    <h3 class="rare-candy-store section5-list-name" id="rare-candy-store">Rare Candy</h3>
+        </div>
+        <div class="col-md-2 section2-img" id="section2-img-3">
+            <img src="media/poke-ball-img.png" alt="placeholder img" class="img-fluid" id="img-water" width="250"/>
+            <div class="section2-text">
+                <!-- <p class=section2-main-text>Starter</p> -->
+                <p class=section2-main-text>Squirtle</p>
+         <input type="submit" value="Chose" id="starter_water" class="section2-button" onclick="changeImage3()";>
+        </div>
+    </div>
+    </div>
+    </div>
+        
+        <section class="section section3 text-center">
+            <h2 class="section3-main-text" id="section3-main-text">Featured Pokemon</h2>
+        </section>
+    
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-xs-1 col-md-2">
+                <div class="card"><img src="media/poke-ball-img.png" alt="placeholder img" class="img-fluid" width="250" id="section4-img-1"/>
+                    <div class="card-body">
+                        <h4 class="card-title section4-text">Lorem</h4>
+                        <p class="text-price">$300 <input type="submit" value="Buy Now" class="section4-button" id="sale_poke4" onclick="changeImage4()"></p>
+                    </div>
+                    </div>
+            </div>
+            <div class="col-xs-1 col-md-2">
+                <div class="card"><img src="media/poke-ball-img.png" alt="placeholder img" class="img-fluid" width="250" id="section4-img-2"/>
+                    <div class="card-body">
+                        <h4 class="card-title section4-text">Lorem</h4>
+                        <p class="text-price">$300 <input type="submit" value="Buy Now" class="section4-button" id="sale_poke2" onclick="changeImage5()"></p>
+                    </div>
+                    </div>
+            </div>
+            <div class="col-xs-1 col-md-2">
+                <div class="card"><img src="media/poke-ball-img.png" alt="placeholder img" class="img-fluid" width="250" id="section4-img-3"/>
+                    <div class="card-body">
+                        <h4 class="card-title section4-text">Lorem</h4>
+                        <p class="text-price">$300 <input type="submit" value="Buy Now" class="section4-button" id="sale_poke4" onclick="changeImage6()"></p>
+                    </div>
+                    </div>                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-xs-1 col-md-2">
+                <div class="card"><img src="media/poke-ball-img.png" alt="placeholder img" class="img-fluid" width="250" id="section4-img-4"/>
+                    <div class="card-body">
+                        <h4 class="card-title section4-text">Lorem</h4>
+                        <p class="text-price">$999 <input type="submit" value="Buy Now" class="section4-button" id="sale_poke4" onclick="changeImage7()"></p>
+                    </div>
+                    </div>              
+            </div>
+            <div class="col-xs-1 col-md-2">
+                <div class="card"><img src="media/poke-ball-img.png" alt="placeholder img" class="img-fluid" width="250" id="section4-img-5"/>
+                    <div class="card-body">
+                        <h4 class="card-title section4-text">Lorem</h4>
+                        <p class="text-price">$999 <input type="submit" value="Buy Now" class="section4-button" id="sale_poke5" onclick="changeImage8()"></p>
+                    </div>
+                    </div>              
+            </div>
+            <div class="col-xs-1 col-md-2">
+                <div class="card"><img src="media/poke-ball-img.png" alt="placeholder img" class="img-fluid" width="250" id="section4-img-6"/>
+                    <div class="card-body">
+                        <h4 class="card-title section4-text">Lorem</h4>
+                        <p class="text-price">$999 <input type="submit" value="Buy Now" class="section4-button" id="sale_poke6" onclick="changeImage9()"></p>
+                    </div>
+                    </div>                
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid section5">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <h3 class="featured-sale section5-list-name" id="featured-sale">Featured Sale</h3>
+                <ul class="featured-list">
+                    <li class="featured-item">Lorem.</li>
+                    <li class="featured-item">Dolore?</li>
+                    <li class="featured-item">Impedit.</li>
+                    <li class="featured-item">Officiis!</li>
+                    <li class="featured-item">Beatae.</li>
+                    <li class="featured-item">Iure!</li>
+                    <li class="featured-item">Reprehenderit!</li>
+                    <li class="featured-item">Ipsa?</li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h3 class="poke-ball-store section5-list-name" id="poke-ball-store">Poke-Ball</h3>
+                <ul class="poke-ball-list">
+                    <li class="poke-ball-item">Lorem.</li>
+                    <li class="poke-ball-item">Inventore.</li>
+                    <li class="poke-ball-item">Laboriosam!</li>
+                    <li class="poke-ball-item">Perferendis.</li>
+                    <li class="poke-ball-item">Ullam!</li>
+                    <li class="poke-ball-item">Accusamus.</li>
+                    <li class="poke-ball-item">Illum?</li>
+                    <li class="poke-ball-item">Nobis!</li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h3 class="rare-candy-store section5-list-name" id="rare-candy-store">Rare Candy</h3>
                     <ul class="rare-candy-list">
                         <li class="rare-candy-item">Lorem.</li>
                         <li class="rare-candy-item">Doloribus.</li>
@@ -192,9 +198,9 @@
                         <li class="rare-candy-item">Explicabo.</li>
                         <li class="rare-candy-item">Ullam.</li>
                     </ul>
-                </div>
-                <div class="quick-link section5-item part-section5">
-                    <h3 class="quick-link-store section5-list-name" id="quick-link-store">Quick Link</h3>
+            </div>
+            <div class="col-md-2">
+                <h3 class="quick-link-store section5-list-name" id="quick-link-store">Quick Link</h3>
                     <ul class="quick-link-list">
                         <li class="quick-link-item">Lorem.</li>
                         <li class="quick-link-item">Adipisci!</li>
@@ -205,74 +211,19 @@
                         <li class="quick-link-item">At.</li>
                         <li class="quick-link-item">Ad?</li>
                     </ul>
-                </div>
-            </div>
-            </section>
-        </div>
-
-        <section class="section6" id="section6">
-            <div class="inner-section6">
-            
-                <div class="top-box" id="top_box">
-                    <div class="enemy-stats" id="enemy_stats">
-                        <div class="enemy-poke-name" id="enemy_poke_name">Ratata</div>
-                        <div class="enemy-poke-level" id="enemy-poke-lvel">Level: 5</div>
-                        <div class="enemy-poke-hp" id="enemy_poke_hp">Hp: 30/30</div>
-                    </div>
-                    <div class="enemy-img" id="enemy_img">
-                        <img src="media/rattata.png" alt="" width="150px" height="150px">
-                </div>
-                </div>
-                
-                <div class="middle-box" id="middle_box">
-                    <div class="your-poke-img" id="your_poke_img">
-                        <img src="media/char-img.png" alt="" width="150px" height="150px">
-                    </div>
-                    <div class="your-poke-stats" id="your_poke_stats">
-                        <div class="poke-name" id="poke_name">Charmander</div>
-                        <div class="poke-level" id="poke-lvel">Level: 5</div>
-                        <div class="poke-hp" id="poke_hp">Hp: 30/30</div>
-                    </div>
-                </div>
-                
-                <div class="bottom-box" id="bottom_box">
-                    <div class="empty-box"></div>
-                    <div class="choices" id="choices">
-                        <div class="inner-choices">
-                        <form action="#">
-                
-                            <div class="fight"><input type="button" value="FIGHT" id="fight"></div>
-                            <div class="PKMN""><input type="button" value="PKMN" id="PKMN"></div>                            
-                            <div class="pokemon-item"><input type="button" value="ITEM" id="pokemon_item"></div>
-                            <div class="run"><input type="button" value="RUN" id="run"></div>
-                        </form>
-                    </div>
-                    </div>
-                </div>
-
-            
-        </div>
-
-        <div class="section6-pt2">
-            <div class="inner-section6-pt2">
-            <img src="media/pokemon-theme-img.png" alt="theme image" class="pokemon-theme-img">
-            <img src="media/poke-ball-img.png" alt="poke-ball" class="section6-pt2-poke-ball">
-            <!-- <button type="button" onclick="myFunction_get()">Get CSS Variable with JavaScript</button>
-            <input type="button" value="START" class="poke-game-start-button" onclick="myFunction_set()> -->
-        </div>
-        </div>
-        </section>
-
-        </div>
-    </main>
-
-    <footer class="footer" id="footer">
-        <div class="inner" id="inner">
-            <div class="colophon">
-                <p class="colophon-text">Coplyright &copy; 2021 Name &middot; All rights reserved</p>
             </div>
         </div>
-    </footer>
+    </div>
+</main>
+
+<footer class="footer" id="footer">
+    <div class="inner" id="inner">
+        <div class="colophon">
+            <p class="colophon-text">Coplyright &copy; 2021 Name &middot; All rights reserved</p>
+        </div>
+    </div>
+</footer>
+    <!-- images -->
 
     <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
@@ -286,12 +237,13 @@
         </defs>
         </svg>
 
-        <!-- <svg class="icon icon-price-tags"><use xlink:href="#icon-price-tags"></use></svg>
+    <!-- images end -->
 
-        <svg class="icon icon-coin-dollar"><use xlink:href="#icon-coin-dollar"></use></svg> -->
-
-        <script src="js/function.js"></script>    
-        
-
+    <script src="js/script.js"></script>
+    
 </body>
 </html>
+
+<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
